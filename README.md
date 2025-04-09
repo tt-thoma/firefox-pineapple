@@ -4,7 +4,7 @@
 **Made for firefox 137.0**
 
 # About
-**A small usertheme combining all the things I like in css: colors, buttons and scrolling backgrounds!**
+**A small usertheme combining all the things I like in css: circles, colored buttons and scrolling backgrounds!**
 
 <img src="https://github.com/tt-thoma/firefox-pineapple/blob/main/.showcase/funky!.png?raw=true">
 
