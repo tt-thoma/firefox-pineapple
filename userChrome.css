@@ -1,0 +1,236 @@
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 353px 500px;
+    }
+}
+
+@keyframes pulsate {
+    from {
+        background-size: 100vw 100vh;
+    }
+    to {
+        background-size: 200vw 200vh;
+    }
+}
+
+#browser {
+    animation: pulsate alternate ease-in-out 5s infinite !important;
+    background: linear-gradient(
+        125deg,
+        rgba(190, 30, 180) 0%,
+        rgba(245, 130, 30) 70%
+    );
+    box-shadow: black inset 0 0 5px;
+}
+
+#alltabs-button {
+    display: none;
+}
+
+#tabbrowser-tabbox,
+#tabbrowser-tabbox * {
+    border-radius: 20px !important;
+}
+
+#tabbrowser-tabbox {
+    box-shadow: black 0px 0px 10px !important;
+    margin: 15px !important;
+    margin-left: 15px !important;
+}
+
+#sidebar-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 50px !important; */
+}
+
+.tab-background {
+    background-image: url(https://color.firefox.com/images/bg-008-60d2718f8c915b5ba09f31df5555b459.svg);
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: black inset 0px 0px 5px;
+    backdrop-filter: blur(5px) brightness(50%);
+}
+
+.tab-background:hover {
+    box-shadow: black inset 0px 0px 0px;
+}
+
+.tab-content {
+    margin-left: 5px;
+}
+
+#navigator-toolbox {
+    background-image: url(https://color.firefox.com/images/bg-040-0df8e190c15355cd3fa41a58e86426a9.svg);
+    animation: slide linear infinite 25s;
+    background-color: rgb(0, 128, 0) !important;
+}
+
+#navigator-toolbox * {
+    opacity: 1 !important;
+}
+
+#nav-bar * {
+    opacity: 1 !important;
+}
+
+#nav-bar {
+    color: white;
+    padding: 0;
+    box-shadow: black inset 0px 0px 10px;
+}
+
+#urlbar {
+    transition: box-shadow ease-in-out 200ms !important;
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    opacity: 1 !important;
+}
+
+#urlbar:hover {
+    box-shadow: inset rgb(0, 256, 256) 0px 2px 0px;
+}
+
+#urlbar[breakout-extend="true"] {
+    box-shadow: inset rgb(0, 256, 256) 0px 2px 0px !important;
+}
+
+#urlbar,
+#urlbar-background {
+    border-radius: 20px !important;
+}
+
+#urlbar-background {
+    box-shadow: black 0px 1px 5px !important;
+    background-image: url(https://color.firefox.com/images/bg-040-0df8e190c15355cd3fa41a58e86426a9.svg);
+    animation: slide linear reverse infinite 60s !important;
+    background-color: rgb(0, 128, 0) !important;
+    filter: grayscale(100%) brightness(40%);
+}
+
+#navigator-toolbox:has(#TabsToolbar[collapsed="true"]) #nav-bar {
+    height: 80px;
+    backdrop-filter: brightness(75%);
+
+    #nav-bar-customization-target #urlbar-container {
+        #urlbar {
+            height: 50px !important;
+            top: 15px !important;
+        }
+        
+        #urlbar[breakout-extend="true"] {
+            height: revert !important;
+        }
+    }
+}
+
+#navigator-toolbox:not(:has(#TabsToolbar[collapsed="true"])) #nav-bar {
+    height: 60px;
+    
+    #nav-bar-customization-target {
+        #urlbar-container #urlbar {
+                top: 52.5px !important;
+                border: yellow solid 1px !important;
+            }
+    }
+}
+
+#urlbar-searchmode-switcher {
+    border-radius: 15px !important;
+    width: 60px;
+    height: 35px;
+    margin: 5px !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(5px) brightness(75%);
+}
+
+#searchmode-switcher-chicklet {
+    font-size: 13px;
+    height: 35px !important;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(5px) brightness(75%);
+}
+
+#identity-icon-box {
+    border-radius: 15px !important;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent !important;
+    backdrop-filter: blur(15px) brightness(75%);
+}
+
+.titlebar-buttonbox-container {
+    background-image: url(https://color.firefox.com/images/bg-040-0df8e190c15355cd3fa41a58e86426a9.svg);
+    animation: slide linear reverse infinite 60s !important;
+    background-color: rgb(0, 128, 0) !important;
+}
+
+.titlebar-buttonbox {
+    backdrop-filter: brightness(60%) grayscale();
+    
+    box-shadow: inset black 0px 0px 5px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    toolbarbutton {
+        transition: all ease-in-out 200ms;
+    }
+    
+    toolbarbutton:hover {
+        box-shadow: black 0px 0px 3px; 
+    }
+}
+
+.titlebar-min image,
+.titlebar-max image,
+.titlebar-restore image,
+.titlebar-close image {
+    transition: all ease-in-out 200ms;
+    border-radius: 2px;
+    color: transparent;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.titlebar-min image {
+    background-color: #00CA4E !important;
+}
+
+.titlebar-min:hover {
+    background-color: #00CA4E !important;
+    image {
+        background-color: white !important;
+    }
+}
+
+.titlebar-max image, .titlebar-restore image {
+    background-color: #FFBD44 !important;
+}
+
+.titlebar-max:hover, .titlebar-restore:hover {
+    background-color: #FFBD44 !important;
+    image {
+        background-color: white !important;
+    }
+}
+
+.titlebar-close image {
+    background-color: #FF605C !important;
+}
+
+.titlebar-close:hover {
+    background-color: #FF605C !important;
+    image {
+        background-color: white !important;
+    }
+}
+
