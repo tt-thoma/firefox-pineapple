@@ -19,10 +19,12 @@
 
 - Keeping firefox's features (eg: pocket) intact
 > <img src="https://github.com/tt-thoma/firefox-pineapple/blob/main/.showcase/searchbar.gif?raw=true">
-- Cool searchbar!
+>
+> Cool searchbar!
 - Vertical and horizontal tabs support!
 > <img src="https://github.com/tt-thoma/firefox-pineapple/blob/main/.showcase/closebuttons.gif?raw=true">
-- Colored buttons!
+>
+> Colored buttons! (only these ones but you can't tell me they're not looking cool)
 
 # Installation
 <img src="https://github.com/tt-thoma/firefox-pineapple/blob/main/.showcase/wow!.png?raw=true">
