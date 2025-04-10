@@ -1,6 +1,6 @@
 # firefox-pineapple
 (Beta) Firefox Pineapple Theme
-
+*Note: White mode is kind of broken, but I have no css workarounds at the moment. You can force firefox to enable the dark version of the layout in `about:addons` > `Extensions/Themes` > `Themes`.* 
 **Made for firefox 137.0**
 
 # About
