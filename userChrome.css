@@ -16,6 +16,10 @@
     }
 }
 
+* {
+    color: white;
+}
+
 #browser {
     animation: pulsate alternate ease-in-out 5s infinite !important;
     background: linear-gradient(
@@ -67,6 +71,7 @@
     background-image: url(https://color.firefox.com/images/bg-040-0df8e190c15355cd3fa41a58e86426a9.svg);
     animation: slide linear infinite 25s;
     background-color: rgb(0, 128, 0) !important;
+    color: white !
 }
 
 #navigator-toolbox * {
